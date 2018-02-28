@@ -6,7 +6,7 @@ var findIndex = require('find-index/findIndex');
 module.exports.deleteSO = function (req, res) {
 
     console.log("deleteSO-->");
-    var rawdata = fs.readFileSync('./specialOfferData.json');
+    var rawdata = fs.readFileSync('/home/deploy/highfli_dev-1519795991970/specialOfferData.json');
     var obj = [];
     var responseData;
     var parsedRawData = JSON.parse(rawdata);
@@ -22,7 +22,7 @@ module.exports.deleteSO = function (req, res) {
      obj = parsedRawData;
        console.log("**obj: "+JSON.stringify(obj));
        
-        fs.writeFile('./specialOfferData.json', JSON.stringify(obj, null, 2));
+        fs.writeFile('/home/deploy/highfli_dev-1519795991970/specialOfferData.json', JSON.stringify(obj, null, 2));
         
         responseData = {
             "status": true,
@@ -45,7 +45,7 @@ module.exports.deleteSO = function (req, res) {
 
 
 module.exports.getSpecialOfferData = function (req, res) {
-    var rawdata = fs.readFileSync( "/home/deploy/highfli_dev-1519795991970/specialOfferData.json");
+    var rawdata = fs.readFileSync( "/home/deploy/highfli_dev/specialOfferData.json");
     var obj = [];
     if (rawdata.length > 0) {
         var parsedRawData = JSON.parse(rawdata);
@@ -93,7 +93,7 @@ module.exports.specialOfferDataUpload = function (req, res) {
 
         console.log("Start to read file");
 
-        var rawdata = fs.readFileSync('./specialOfferData.json');
+        var rawdata = fs.readFileSync('/home/deploy/highfli_dev-1519795991970/specialOfferData.json');
         console.log("rawdata: " + rawdata.length);
         if (rawdata.length > 0) {
             console.log("there is some data");
@@ -112,7 +112,7 @@ module.exports.specialOfferDataUpload = function (req, res) {
 
 
             // newData.push(obj);
-           fs.writeFile('./specialOfferData.json', JSON.stringify(obj, null, 2));
+           fs.writeFile('/home/deploy/highfli_dev-1519795991970/specialOfferData.json', JSON.stringify(obj, null, 2));
           
        
             // console.log("newparsedRawData: " + newparsedRawData);
@@ -124,7 +124,7 @@ module.exports.specialOfferDataUpload = function (req, res) {
         }
         else {
            
-            fs.writeFile('./specialOfferData.json', JSON.stringify(obj, null, 2));
+            fs.writeFile('/home/deploy/highfli_dev-1519795991970/specialOfferData.json', JSON.stringify(obj, null, 2));
         }
 
         responseData = {
