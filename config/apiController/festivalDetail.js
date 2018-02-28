@@ -6,7 +6,7 @@ var findIndex = require('find-index/findIndex');
 module.exports.deleteFD = function (req, res) {
 
     console.log("deleteSO-->");
-    var rawdata = fs.readFileSync('./festivalDetail.json');
+    var rawdata = fs.readFileSync('/home/deploy/highfli_dev/festivalDetail.json');
     var obj = [];
     var responseData;
     var parsedRawData = JSON.parse(rawdata);
@@ -22,7 +22,7 @@ module.exports.deleteFD = function (req, res) {
      obj = parsedRawData;
        console.log("**obj: "+JSON.stringify(obj));
        
-        fs.writeFile('./festivalDetail.json', JSON.stringify(obj, null, 2));
+        fs.writeFile('/home/deploy/highfli_dev/festivalDetail.json', JSON.stringify(obj, null, 2));
         
         responseData = {
             "status": true,
@@ -45,7 +45,7 @@ module.exports.deleteFD = function (req, res) {
 
 
 module.exports.getFestivalDetailData = function (req, res) {
-    var rawdata = fs.readFileSync('./festivalDetail.json');
+    var rawdata = fs.readFileSync('/home/deploy/highfli_dev/festivalDetail.json');
     var obj = [];
     if (rawdata.length > 0) {
         var parsedRawData = JSON.parse(rawdata);
@@ -93,7 +93,7 @@ module.exports.festivalDetailDataUpload = function (req, res) {
 
         console.log("Start to read file");
 
-        var rawdata = fs.readFileSync('./festivalDetail.json');
+        var rawdata = fs.readFileSync('/home/deploy/highfli_dev/festivalDetail.json');
         console.log("rawdata: " + rawdata.length);
         if (rawdata.length > 0) {
             console.log("there is some data");
@@ -112,7 +112,7 @@ module.exports.festivalDetailDataUpload = function (req, res) {
 
 
             // newData.push(obj);
-            fs.writeFile('./festivalDetail.json', JSON.stringify(obj, null, 2));
+            fs.writeFile('/home/deploy/highfli_dev/festivalDetail.json', JSON.stringify(obj, null, 2));
        
             // console.log("newparsedRawData: " + newparsedRawData);
             // console.log("newparsedRawData.length: " + JSON.stringify(newparsedRawData).length);
@@ -123,7 +123,7 @@ module.exports.festivalDetailDataUpload = function (req, res) {
         }
         else {
             console.log("there is no data");
-            fs.writeFile('./festivalDetail.json', JSON.stringify(obj, null, 2));
+            fs.writeFile('/home/deploy/highfli_dev/festivalDetail.json', JSON.stringify(obj, null, 2));
         }
 
         responseData = {
