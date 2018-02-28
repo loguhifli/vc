@@ -1,0 +1,38 @@
+<div class="modal-header loginpopUp_header">
+    <h4 class="modal-title loginpopUp_headerTitle">Login</h4>
+    <button type="button" class="close" ng-click="$close()">&times;</button>
+</div>
+<form name="loginForm" novalidate>
+    <div class="modal-body loginpopUp_body">
+
+        <label class="emailModel-lab">UserId
+            <span ng-show="loginForm.userId.$error.required" class="mandatorySymbol"></span>
+        </label>
+        <br>
+        <input class="emailInput" type="email" placeholder="Enter your email id" name="userId" ng-model="usereMailId" ng-required="true">
+        <br>
+        <span class="validationNotify" ng-show="(loginForm.userId.$touched || loginForm.$submitted)&& loginForm.userId.$error.required">From email is required
+            <br>
+        </span>
+        <span ng-hide="loginForm.userId.$error.required">
+            <span ng-show="loginForm.userId.$dirty && loginForm.userId.$invalid" style="color:red;">Type Valid Id Ex:abc@gmail.com</span>
+            <br>
+        </span>
+
+
+        <label class="emailModel-lab">Password
+            <span ng-show="loginForm.loginPswd.$error.required" class="mandatorySymbol"></span>
+        </label>
+        <br>
+        <input class="emailInput" type="password" placeholder="Enter your password" name="loginPswd" ng-model="loginPassword" ng-required="true">
+        <br>
+        <span class="validationNotify" ng-show="(loginForm.loginPswd.$touched || loginForm.$submitted) && loginForm.loginPswd.$error.required">Subject is required
+            <br>
+        </span>
+
+    </div>
+    <div class="modal-footer loginpopUp_footer" >
+        <button type="button" class="btn btn-default loginpopUp_footerBtn" ng-click="$close()">Close</button>
+        <button type="submit" class="btn btn-default loginpopUp_footerBtn" ng-click="loginSubmit(loginForm, usereMailId, loginPassword)">Send</button>
+    </div>
+</form>

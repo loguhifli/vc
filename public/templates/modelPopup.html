@@ -1,0 +1,47 @@
+<div class="modal-header loginpopUp_header">
+  <h3 class="modal-title loginpopUp_headerTitle">Send Email</h3>
+  <button type="button" class="close" ng-click="$close()">&times;</button>
+</div>
+<form name="emailContactForm" novalidate>
+  <div class="modal-body loginpopUp_body">
+    <label class="emailModel-lab">From
+      <span ng-show="emailContactForm.fromEm.$error.required" class="mandatorySymbol"></span>
+    </label>
+    <br>
+    <input class="emailInput" type="email" placeholder="Enter your email id" name="fromEm" ng-model="fromEmailId" ng-required="true">
+    <br>
+    <span class="validationNotify" ng-show="(emailContactForm.fromEm.$touched || emailContactForm.$submitted) && emailContactForm.fromEm.$error.required">From email is required
+      <br>
+    </span>
+    <!-- <span class="validationNotify" ng-show="emailContactForm.fromEm.$touched && emailContactForm.fromEm.$invalid">Enter Valid email Ex:abc@gmail.com<br></span> -->
+    <span ng-hide="emailContactForm.fromEm.$error.required">
+      <span ng-show="emailContactForm.fromEm.$dirty && emailContactForm.fromEm.$invalid" style="color:red;">Type Valid Id Ex:abc@gmail.com</span>
+      <br>
+    </span>
+
+    <label class="emailModel-lab">Subject
+      <span ng-show="emailContactForm.fromEm.$error.required" class="mandatorySymbol"></span>
+    </label>
+    <br>
+    <input class="emailInput" type="text" placeholder="Enter your Subject" name="emailS" ng-model="emailSub" ng-required="true">
+    <br>
+    <span class="validationNotify" ng-show="emailContactForm.emailS.$touched && emailContactForm.emailS.$error.required">Subject is required
+      <br>
+    </span>
+
+    <label class="emailModel-lab">Message
+      <span ng-show="emailContactForm.fromEm.$error.required" class="mandatorySymbol"></span>
+    </label>
+    <br>
+    <textarea class="emailInput emailInput-textarea" auto-resize placeholder="Enter Your Message" name="emailDes" ng-model="emailMes"
+      ng-required="true"></textarea>
+    <br>
+    <span class="validationNotify" ng-show="emailContactForm.emailDes.$touched && emailContactForm.emailDes.$error.required">Message is required
+      <br>
+    </span>
+  </div>
+  <div class="modal-footer loginpopUp_footer">
+    <button class="btn btn-default" type="button" ng-click="$close()">Close</button>
+    <button type="submit" class="btn btn-default" ng-click="sendEmail(emailContactForm, fromEmailId, emailSub, emailMes)">Send</button>
+  </div>
+</form>

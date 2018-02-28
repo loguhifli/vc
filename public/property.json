@@ -1,0 +1,5 @@
+{
+
+    "ROOT_URL": "http://localhost:8085/",
+    "emailSend": "travel/emailSend"
+}

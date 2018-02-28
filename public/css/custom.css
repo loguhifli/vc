@@ -1,0 +1,140 @@
+
+    /* Custom Css */
+
+    .logo{
+        width: 200px;
+    }
+    .cursor_mark{
+        cursor:pointer;
+    }
+    .text_align{
+        text-align:center !important;
+
+    }
+    .portfolio_container{
+        margin-top:-5%;
+
+    }
+    .deleteDetail_btn{
+        margin-top:-15%;
+    }
+    .mob_modelHead{
+        background-color:#f05f40;
+    }
+    .mob_modelFoot{
+        background-color:#e3e3e663
+    }
+   
+
+
+    .background-trans
+    {
+      background-color:transparent;
+      color:#fff;
+    }
+
+    .emailModel-lab
+    {
+        font-weight:700;
+    }
+    .emailInput
+    {
+        margin-bottom:3%;
+        /* border-radius: 10%; */
+        padding: 2%;
+       
+        width:80%;
+        
+    }
+    .emailInput:focus {
+        border-style: unset;
+        
+        outline: none !important;
+       
+        box-shadow: 0 0 10px #719ECE;
+    }
+   .emailInput-textarea{
+        width:100%;
+        height: 138px !important;
+    }
+    /* ##### Start validation style  ##### */
+    .mandatorySymbol:before 
+    {
+	    content: "*";
+        color:red; 
+    }
+
+    .validationNotify
+    {
+	    color:red;
+    }	
+    /* ##### End validation style  ##### */
+
+    /* ### Start hover drop down for contact button###*/
+    .dropbtn {
+   
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+    }
+    
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f05f40;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown-content a:hover {background-color: #ddd}
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .dropdown:hover .dropbtn {
+        /* background-color: #f05f40; */
+    }
+    /* ### End hover drop down for contact button*/
+
+    /* ### Start login modal ### */
+    .loginpopUp_header{
+
+        background-color:#e4e4e4;
+        font-weight: 100;
+        /* font-family: Oswald !important; */
+        color: #0e1e239e;
+       
+    }
+    .loginpopUp_headerTitle{
+        font-size: 1.1rem !important;
+    }
+    .loginpopUp_body{
+        background-color:#ece9e96b;
+        font-weight: 100;
+        /* font-family: Oswald !important; */
+        color: #0e1e239e;
+        
+    }
+    .loginpopUp_footer{
+        background-color:#e4e4e49c;
+    }
+    .loginpopUp_footerBtn{
+        /* font-family: Oswald !important; */
+        color: #0e1e239e;
+        cursor:pointer;
+    }
+    /* ### End login modal ### */
