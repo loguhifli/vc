@@ -45,7 +45,7 @@ module.exports.deleteSO = function (req, res) {
 
 
 module.exports.getSpecialOfferData = function (req, res) {
-    var rawdata = fs.readFileSync(  __dirname + "/specialOfferData.json");
+    var rawdata = fs.readFileSync( "/home/deploy/highfli_dev-1519795991970/specialOfferData.json");
     var obj = [];
     if (rawdata.length > 0) {
         var parsedRawData = JSON.parse(rawdata);
