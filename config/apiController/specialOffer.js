@@ -45,7 +45,7 @@ module.exports.deleteSO = function (req, res) {
 
 
 module.exports.getSpecialOfferData = function (req, res) {
-    var rawdata = fs.readFileSync('http://159.89.161.196:3000/specialOfferData.json');
+    var rawdata = fs.readFileSync( __dirname + "/specialOfferData.json");
     var obj = [];
     if (rawdata.length > 0) {
         var parsedRawData = JSON.parse(rawdata);
