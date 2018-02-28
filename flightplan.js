@@ -7,13 +7,13 @@ var startFile = 'server.js';
 var tmpDir = appName+'-' + new Date().getTime();
 
 // configuration
-plan.target('staging', [
-  {
-    host: '104.131.93.214',
-    username: username,
-    agent: process.env.SSH_AUTH_SOCK
-  }
-]);
+// plan.target('staging', [
+//   {
+//     host: '104.131.93.214',
+//     username: username,
+//     agent: process.env.SSH_AUTH_SOCK
+//   }
+// ]);
 
 plan.target('production', [
   {
