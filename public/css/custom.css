@@ -178,7 +178,13 @@
     .cancelbtn {
         width: auto;
         padding: 10px 18px;
-        background-color: #f44336;
+        background-color: #613c2a;
+        margin-left: 58%;
+    }
+    .saveBtn{
+        width: auto;
+        padding: 10px 18px;
+        background-color: #2c545a;
         margin-left: 58%;
     }
 
