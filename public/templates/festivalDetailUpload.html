@@ -9,7 +9,7 @@
             <span ng-show="festDetail_uploadForm.festDetail_title.$error.required" class="mandatorySymbol"></span>
         </label>
         <br>
-        <input type="text" placeholder="Enter Your Title" name="festDetail_title" ng-model="festDetailTitle" ng-required="true">
+        <input class="template_input" type="text" placeholder="Enter Your Title" name="festDetail_title" ng-model="festDetailTitle" ng-required="true">
         <br>
         <span class="validationNotify" ng-show="(festDetail_uploadForm.festDetail_title.$touched || festDetail_uploadForm.$submitted) && festDetail_uploadForm.festDetail_title.$error.required">Title is required
             <br>
@@ -19,7 +19,7 @@
             <span ng-show="festDetail_uploadForm.festDetail_msg.$error.required" class="mandatorySymbol"></span>
         </label>
         <br>
-        <textarea class="emailInput-textarea" auto-resize placeholder="Enter Your Message" name="festDetail_msg" ng-model="festDetailMsg"
+        <textarea class="template_input emailInput-textarea" auto-resize placeholder="Enter Your Message" name="festDetail_msg" ng-model="festDetailMsg"
             ng-required="true"></textarea>
         <br>
         <span class="validationNotify" ng-show="(festDetail_uploadForm.festDetail_msg.$touched || festDetail_uploadForm.$submitted) && festDetail_uploadForm.festDetail_msg.$error.required">Message is required
