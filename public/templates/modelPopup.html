@@ -2,8 +2,8 @@
   <h3 class="modal-title loginpopUp_headerTitle">Send Email</h3>
   <button type="button" class="close" ng-click="$close()">&times;</button>
 </div> -->
-<form name="emailContactForm" novalidate>
-  <div class="modal-body loginpopUp_body">
+<form name="emailContactForm" class="animate" novalidate>
+  <div class="container">
     <label class="emailModel-lab">From
       <span ng-show="emailContactForm.fromEm.$error.required" class="mandatorySymbol"></span>
     </label>
@@ -41,7 +41,7 @@
     </span>
   </div>
   <div class="modal-footer loginpopUp_footer">
-    <button class="btn btn-default" type="button" ng-click="$close()">Close</button>
+    <button class="btn btn-default"  type="button" ng-click="$close()">Close</button>
     <button type="submit" class="btn btn-default" ng-click="sendEmail(emailContactForm, fromEmailId, emailSub, emailMes)">Send</button>
   </div>
 </form>
