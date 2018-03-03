@@ -277,7 +277,10 @@ app.controller('highFliCtrl', ['$scope', '$uibModal', '$rootScope', 'httpFactory
             scope: $scope,
             templateUrl: 'templates/specialOfferUpload.html',
             windowClass: 'show',
-            backdropClass: 'show'
+            backdropClass: 'show',
+            controller: function ($scope, $uibModalInstance) {
+                $scope.backgroundImg = "greenSky.png";
+            }
 
 
         })
@@ -291,7 +294,10 @@ app.controller('highFliCtrl', ['$scope', '$uibModal', '$rootScope', 'httpFactory
             scope: $scope,
             templateUrl: 'templates/festivalDetailUpload.html',
             windowClass: 'show',
-            backdropClass: 'show'
+            backdropClass: 'show',
+            controller: function ($scope, $uibModalInstance) {
+                $scope.backgroundImg = "greenSky.png";
+            }
 
 
         })
