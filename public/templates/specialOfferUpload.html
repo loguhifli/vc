@@ -1,9 +1,9 @@
-<div class="modal-header loginpopUp_header">
+<!-- <div class="modal-header loginpopUp_header">
     <h3 class="modal-title loginpopUp_headerTitle">Upload Details</h3>
     <button type="button" class="close" ng-click="$close()">&times;</button>
-</div>
-<form name="speOff_uploadForm" novalidate>
-    <div class="modal-body loginpopUp_body" style="background-image: url(img/greenSky.png);">
+</div> -->
+<form name="speOff_uploadForm" class="animate" novalidate>
+    <div  class="container"  style="background-image: url(img/{{backgroundImg}});">
 
         <label class="emailModel-lab">Title
             <span ng-show="speOff_uploadForm.speOff_title.$error.required" class="mandatorySymbol"></span>
@@ -42,11 +42,11 @@
             <br>Image height should be equal to 350px! Image width should be equal to 650px!
         </span>
         <br>
-
+        <div class="modal-footer loginpopUp_footer">
+            <button class="btn btn-default loginpopUp_footerBtn" type="button" ng-click="$close()">Close</button>
+            <button type="submit" class="btn btn-default loginpopUp_footerBtn" ng-click="specOffSub(speOff_uploadForm, speOffTitle, speOffMsg, file.upload)">Upload</button>
+        </div>
 
     </div>
-    <div class="modal-footer loginpopUp_footer">
-        <button class="btn btn-default loginpopUp_footerBtn" type="button" ng-click="$close()">Close</button>
-        <button type="submit" class="btn btn-default loginpopUp_footerBtn" ng-click="specOffSub(speOff_uploadForm, speOffTitle, speOffMsg, file.upload)">Upload</button>
-    </div>
+   
 </form>

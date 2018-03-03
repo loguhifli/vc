@@ -1,15 +1,15 @@
-<div class="modal-header loginpopUp_header">
+<!-- <div class="modal-header loginpopUp_header">
     <h4 class="modal-title loginpopUp_headerTitle">Upload Festival Details</h4>
     <button type="button" class="close" ng-click="$close()">&times;</button>
-</div>
-<form name="festDetail_uploadForm" novalidate>
-    <div class="modal-body loginpopUp_body" style="background-image: url(img/greenSky.png);">
+</div> -->
+<form name="festDetail_uploadForm" class="animate" novalidate>
+    <div  class="container" style="background-image: url(img/{{backgroundImg}});">
 
         <label class="emailModel-lab">Title
             <span ng-show="festDetail_uploadForm.festDetail_title.$error.required" class="mandatorySymbol"></span>
         </label>
         <br>
-        <input class="emailInput" type="text" placeholder="Enter Your Title" name="festDetail_title" ng-model="festDetailTitle" ng-required="true">
+        <input type="text" placeholder="Enter Your Title" name="festDetail_title" ng-model="festDetailTitle" ng-required="true">
         <br>
         <span class="validationNotify" ng-show="(festDetail_uploadForm.festDetail_title.$touched || festDetail_uploadForm.$submitted) && festDetail_uploadForm.festDetail_title.$error.required">Title is required
             <br>
@@ -19,7 +19,7 @@
             <span ng-show="festDetail_uploadForm.festDetail_msg.$error.required" class="mandatorySymbol"></span>
         </label>
         <br>
-        <textarea class="emailInput emailInput-textarea" auto-resize placeholder="Enter Your Message" name="festDetail_msg" ng-model="festDetailMsg"
+        <textarea class="emailInput-textarea" auto-resize placeholder="Enter Your Message" name="festDetail_msg" ng-model="festDetailMsg"
             ng-required="true"></textarea>
         <br>
         <span class="validationNotify" ng-show="(festDetail_uploadForm.festDetail_msg.$touched || festDetail_uploadForm.$submitted) && festDetail_uploadForm.festDetail_msg.$error.required">Message is required
@@ -42,11 +42,11 @@
             <br>Image height should be equal to 350px! Image width should be equal to 650px!
         </span>
         <br>
-
+        <div class="modal-footer loginpopUp_footer">
+            <button class="btn btn-default loginpopUp_footerBtn" type="button" ng-click="$close()">Close</button>
+            <button type="submit" class="btn btn-default loginpopUp_footerBtn" ng-click="festDetailSub(festDetail_uploadForm, festDetailTitle, festDetailMsg, file.upload)">Upload</button>
+        </div>
 
     </div>
-    <div class="modal-footer loginpopUp_footer">
-        <button class="btn btn-default loginpopUp_footerBtn" type="button" ng-click="$close()">Close</button>
-        <button type="submit" class="btn btn-default loginpopUp_footerBtn" ng-click="festDetailSub(festDetail_uploadForm, festDetailTitle, festDetailMsg, file.upload)">Upload</button>
-    </div>
+   
 </form>
