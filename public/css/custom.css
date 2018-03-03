@@ -129,14 +129,14 @@
         color: #0e1e239e;
         
     }
-    .loginpopUp_footer{
+    /* .loginpopUp_footer{
         background-color:#e4e4e49c;
-    }
-    .loginpopUp_footerBtn{
-        /* font-family: Oswald !important; */
+    } */
+    /* .loginpopUp_footerBtn{
+       
         color: #0e1e239e;
         cursor:pointer;
-    }
+    } */
     /* ### End login modal ### */
 
     /* ### Start Popup  ### */
