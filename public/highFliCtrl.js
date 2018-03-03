@@ -166,14 +166,14 @@ app.controller('highFliCtrl', ['$scope', '$uibModal', '$rootScope', 'httpFactory
             })
         }
         else {
-            $scope.message = "Please fill the mandatory field";
-            $scope.status = false;
-            alertModalinstance = $uibModal.open({
-                scope: $scope,
-                templateUrl: 'templates/alert.html',
-                windowClass: 'show',
-                backdropClass: 'show',
-            })
+            // $scope.message = "Please fill the mandatory field";
+            // $scope.status = false;
+            // alertModalinstance = $uibModal.open({
+            //     scope: $scope,
+            //     templateUrl: 'templates/alert.html',
+            //     windowClass: 'show',
+            //     backdropClass: 'show',
+            // })
         }
         console.log("<--login");
     }
