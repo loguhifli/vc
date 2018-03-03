@@ -138,6 +138,10 @@ app.controller('highFliCtrl', ['$scope', '$uibModal', '$rootScope', 'httpFactory
                         templateUrl: 'templates/alert.html',
                         windowClass: 'show',
                         backdropClass: 'show',
+                        controller: function ($scope, $uibModalInstance) {
+                            $scope.backgroundImg = greenSky.png;
+                        }
+
                     })
                     console.log("data" + JSON.stringify(data.data));
 
@@ -160,6 +164,9 @@ app.controller('highFliCtrl', ['$scope', '$uibModal', '$rootScope', 'httpFactory
                         templateUrl: 'templates/alert.html',
                         windowClass: 'show',
                         backdropClass: 'show',
+                        controller: function ($scope, $uibModalInstance) {
+                            $scope.backgroundImg = redSky.png;
+                        }
                     })
                 }
 
