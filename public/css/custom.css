@@ -132,11 +132,11 @@
     /* .loginpopUp_footer{
         background-color:#e4e4e49c;
     } */
-    /* .loginpopUp_footerBtn{
-       
+    .loginpopUp_footerBtn{
+        /* font-family: Oswald !important; */
         color: #0e1e239e;
         cursor:pointer;
-    } */
+    }
     /* ### End login modal ### */
 
     /* ### Start Popup  ### */
@@ -178,13 +178,7 @@
     .cancelbtn {
         width: auto;
         padding: 10px 18px;
-        background-color: #613c2a;
-        margin-left: 58%;
-    }
-    .saveBtn{
-        width: auto;
-        padding: 10px 18px;
-        background-color: #2c545a;
+        background-color: #f44336;
         margin-left: 58%;
     }
 
