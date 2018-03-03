@@ -178,16 +178,7 @@
     }
 
 
-
-    .container {
-        padding: 16px;
-        /* background-image: url("sky1.jpg"); */
-    }
-
-    span.psw {
-        float: right;
-        padding-top: 16px;
-    }
+/*  */
 
     /* The Modal (background) */
 
@@ -202,7 +193,7 @@
 
     /* Change styles for span and cancel button on extra small screens */
 
-    @media screen and (max-width: 300px) {
+    /* @media screen and (max-width: 300px) {
         span.psw {
             display: block;
             float: none;
@@ -210,6 +201,6 @@
         .cancelbtn {
             width: 100%;
         }
-    }
+    } */
 
     /* ### Start Popup  ### */
