@@ -97,6 +97,9 @@ app.controller('highFliCtrl', ['$scope', '$uibModal', '$rootScope', 'httpFactory
             templateUrl: 'templates/alert.html',
             windowClass: 'show',
             backdropClass: 'show',
+            controller: function ($scope, $uibModalInstance) {
+                $scope.backgroundImg = "greenSky.png";
+            }
         })
         
         console.log("<--Logout")
@@ -240,6 +243,10 @@ app.controller('highFliCtrl', ['$scope', '$uibModal', '$rootScope', 'httpFactory
                         templateUrl: 'templates/alert.html',
                         windowClass: 'show',
                         backdropClass: 'show',
+                        controller: function ($scope, $uibModalInstance) {
+                            $scope.backgroundImg = "greenSky.png";
+                        }
+            
                     })
                     // $window.location.href = $scope.propertyJson.R082;
                 }
@@ -249,6 +256,10 @@ app.controller('highFliCtrl', ['$scope', '$uibModal', '$rootScope', 'httpFactory
                         templateUrl: 'templates/alert.html',
                         windowClass: 'show',
                         backdropClass: 'show',
+                        controller: function ($scope, $uibModalInstance) {
+                            $scope.backgroundImg = "redSky.png";
+                        }
+            
                     })
                 }
 
@@ -375,6 +386,10 @@ app.controller('highFliCtrl', ['$scope', '$uibModal', '$rootScope', 'httpFactory
                     templateUrl: 'templates/alert.html',
                     windowClass: 'show',
                     backdropClass: 'show',
+                    controller: function ($scope, $uibModalInstance) {
+                        $scope.backgroundImg = "greenSky.png";
+                    }
+        
                 })
                 $scope.getFestivalDetailData();
             }
@@ -384,6 +399,10 @@ app.controller('highFliCtrl', ['$scope', '$uibModal', '$rootScope', 'httpFactory
                     templateUrl: 'templates/alert.html',
                     windowClass: 'show',
                     backdropClass: 'show',
+                    controller: function ($scope, $uibModalInstance) {
+                        $scope.backgroundImg = "redSky.png";
+                    }
+        
                 })
 
                 // alert("error");
@@ -448,6 +467,10 @@ app.controller('highFliCtrl', ['$scope', '$uibModal', '$rootScope', 'httpFactory
                             templateUrl: 'templates/alert.html',
                             windowClass: 'show',
                             backdropClass: 'show',
+                            controller: function ($scope, $uibModalInstance) {
+                                $scope.backgroundImg = "redSky.png";
+                            }
+                
                         })
 
 
@@ -495,6 +518,10 @@ app.controller('highFliCtrl', ['$scope', '$uibModal', '$rootScope', 'httpFactory
                     templateUrl: 'templates/alert.html',
                     windowClass: 'show',
                     backdropClass: 'show',
+                    controller: function ($scope, $uibModalInstance) {
+                        $scope.backgroundImg = "greenSky.png";
+                    }
+        
                 })
 
                 $scope.getSpecialOfferData();
@@ -504,7 +531,11 @@ app.controller('highFliCtrl', ['$scope', '$uibModal', '$rootScope', 'httpFactory
                     scope: $scope,
                     templateUrl: 'templates/alert.html',
                     windowClass: 'show',
-                    backdropClass: 'show'
+                    backdropClass: 'show',
+                    controller: function ($scope, $uibModalInstance) {
+                        $scope.backgroundImg = "redSky.png";
+                    }
+        
 
                 })
                 // alert("error");
@@ -541,6 +572,10 @@ app.controller('highFliCtrl', ['$scope', '$uibModal', '$rootScope', 'httpFactory
                     templateUrl: 'templates/alert.html',
                     windowClass: 'show',
                     backdropClass: 'show',
+                    controller: function ($scope, $uibModalInstance) {
+                        $scope.backgroundImg = "greenSky.png";
+                    }
+        
                 })
 
                 $scope.getSpecialOfferData();
@@ -551,6 +586,10 @@ app.controller('highFliCtrl', ['$scope', '$uibModal', '$rootScope', 'httpFactory
                     templateUrl: 'templates/alert.html',
                     windowClass: 'show',
                     backdropClass: 'show',
+                    controller: function ($scope, $uibModalInstance) {
+                        $scope.backgroundImg = "redSky.png";
+                    }
+        
                 })
 
                 console.log("Proccess failed");
@@ -581,6 +620,10 @@ app.controller('highFliCtrl', ['$scope', '$uibModal', '$rootScope', 'httpFactory
                     templateUrl: 'templates/alert.html',
                     windowClass: 'show',
                     backdropClass: 'show',
+                    controller: function ($scope, $uibModalInstance) {
+                        $scope.backgroundImg = "greenSky.png";
+                    }
+        
                 })
                 // $window.location.href = $scope.propertyJson.R082;
                 $scope.getFestivalDetailData();
@@ -591,6 +634,10 @@ app.controller('highFliCtrl', ['$scope', '$uibModal', '$rootScope', 'httpFactory
                     templateUrl: 'templates/alert.html',
                     windowClass: 'show',
                     backdropClass: 'show',
+                    controller: function ($scope, $uibModalInstance) {
+                        $scope.backgroundImg = "redSky.png";
+                    }
+        
                 })
                 console.log("Proccess failed");
             }
