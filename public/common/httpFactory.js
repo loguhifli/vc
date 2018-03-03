@@ -1,6 +1,6 @@
 app.factory('httpFactory', function( $http, $q, $rootScope) {
     return {
-        post: function(api,data,headers) {
+        post: function(api,data) {
             console.log("legoHttpFactory: data: "+JSON.stringify(data));
             
             var dfd = $q.defer();
@@ -11,8 +11,7 @@ app.factory('httpFactory', function( $http, $q, $rootScope) {
                 method: 'POST',
                 // url: postUrl,
                 url: api,
-                data: data,
-                headers: headers
+                data: data
             }).
             then(function(data) {
                 console.log(data);
