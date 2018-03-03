@@ -39,9 +39,10 @@
     <span class="validationNotify" ng-show="emailContactForm.emailDes.$touched && emailContactForm.emailDes.$error.required">Message is required
       <br>
     </span>
+    <div class="modal-footer loginpopUp_footer">
+      <button class="btn btn-default" type="button" ng-click="$close()">Close</button>
+      <button type="submit" class="btn btn-default" ng-click="sendEmail(emailContactForm, fromEmailId, emailSub, emailMes)">Send</button>
+    </div>
   </div>
-  <div class="modal-footer loginpopUp_footer">
-    <button class="btn btn-default"  type="button" ng-click="$close()">Close</button>
-    <button type="submit" class="btn btn-default" ng-click="sendEmail(emailContactForm, fromEmailId, emailSub, emailMes)">Send</button>
-  </div>
+
 </form>
