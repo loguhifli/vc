@@ -111,7 +111,32 @@
     /* ### End hover drop down for contact button*/
 
     /* ### Start login modal ### */
- 
+    .loginpopUp_header{
+
+        background-color:#e4e4e4;
+        font-weight: 100;
+        /* font-family: Oswald !important; */
+        color: #0e1e239e;
+       
+    }
+    .loginpopUp_headerTitle{
+        font-size: 1.1rem !important;
+    }
+    .loginpopUp_body{
+        background-color:#ece9e96b;
+        font-weight: 100;
+        /* font-family: Oswald !important; */
+        color: #0e1e239e;
+        
+    }
+    .loginpopUp_footer{
+        background-color:#e4e4e49c;
+    }
+    .loginpopUp_footerBtn{
+        /* font-family: Oswald !important; */
+        color: #0e1e239e;
+        cursor:pointer;
+    }
     /* ### End login modal ### */
 
     /* ### Start Popup  ### */
