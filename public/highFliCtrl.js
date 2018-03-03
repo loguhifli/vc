@@ -139,7 +139,7 @@ app.controller('highFliCtrl', ['$scope', '$uibModal', '$rootScope', 'httpFactory
                         windowClass: 'show',
                         backdropClass: 'show',
                         controller: function ($scope, $uibModalInstance) {
-                            $scope.backgroundImg = greenSky.png;
+                            $scope.backgroundImg = "greenSky.png";
                         }
 
                     })
@@ -165,7 +165,7 @@ app.controller('highFliCtrl', ['$scope', '$uibModal', '$rootScope', 'httpFactory
                         windowClass: 'show',
                         backdropClass: 'show',
                         controller: function ($scope, $uibModalInstance) {
-                            $scope.backgroundImg = redSky.png;
+                            $scope.backgroundImg = "redSky.png";
                         }
                     })
                 }
