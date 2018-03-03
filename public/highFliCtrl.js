@@ -199,7 +199,11 @@ app.controller('highFliCtrl', ['$scope', '$uibModal', '$rootScope', 'httpFactory
             scope: $scope,
             templateUrl: 'templates/modelPopup.html',
             windowClass: 'show',
-            backdropClass: 'show'
+            backdropClass: 'show',
+            controller: function ($scope, $uibModalInstance) {
+                $scope.backgroundImg = "greenSky.png";
+            }
+
 
         })
 
