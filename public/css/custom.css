@@ -225,10 +225,11 @@
     /* Modal Content/Box */
 
     .modal-content {
-        background-color: unset !important; /* ### Note:Overwite the bootstrap model background color for every before popup action ### */
-        /* margin: 5% auto 15% auto;
-    border: 1px solid #888;
-    width: 50%; */
+        /* ### Start Note:Overwite the bootstrap model background color for every before popup action ### */
+        background-color: unset !important; 
+        border:unset; 
+        /* ### End Note:Overwite the bootstrap model background color for every before popup action ### */
+        
     }
 
     /* The Close Button (x) */
