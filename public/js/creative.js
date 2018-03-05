@@ -6,12 +6,12 @@
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: (target.offset().top - 87)
-        }, 1000, "easeInOutExpo");
-        return false;
-      }
+      // if (target.length) {
+      //   $('html, body').animate({
+      //     scrollTop: (target.offset().top - 87)
+      //   }, 1000, "easeInOutExpo");
+      //   return false;
+      // }
     }
   });
 
@@ -23,7 +23,7 @@
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '#mainNav',
-    offset: 87
+    offset: 57
   });
 
   // Collapse Navbar
