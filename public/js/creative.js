@@ -95,6 +95,50 @@
         // }
         
       }
+      else if($('#specOffr').hasClass('active'))
+      {
+        console.log("cont-->");
+        document.getElementById('mainNav').style.background='white';
+        document.getElementById('abt').style.color='rgb(33, 37, 41)';
+        document.getElementById('serv').style.color='rgb(33, 37, 41)';
+        document.getElementById('more').style.color='rgb(33, 37, 41)';
+        document.getElementById('cont').style.color='rgb(33, 37, 41)';
+        document.getElementById('insur').style.color='rgb(33, 37, 41)';
+        document.getElementById('logoName').style.color='rgb(33, 37, 41)';
+        
+        document.getElementById('loginIcon').style.color='rgb(33, 37, 41)';
+        document.getElementById('logoutIcon').style.color='rgb(33, 37, 41)';
+        //document.getElementById('specOffr').style.color='rgb(33, 37, 41)';
+        // if( document.getElementById('loginIcon')){
+        //   document.getElementById('loginIcon').style.color='rgb(33, 37, 41)';
+        // }
+        // if( document.getElementById('logoutIcon'))
+        // {
+        //   document.getElementById('logoutIcon').style.color='rgb(33, 37, 41)';
+        // }
+      }
+      else if($('#insur').hasClass('active'))
+      {
+        console.log("cont-->");
+        document.getElementById('mainNav').style.background='white';
+        document.getElementById('abt').style.color='rgb(33, 37, 41)';
+        document.getElementById('serv').style.color='rgb(33, 37, 41)';
+        document.getElementById('more').style.color='rgb(33, 37, 41)';
+        document.getElementById('cont').style.color='rgb(33, 37, 41)';
+        // document.getElementById('insur').style.color='rgb(33, 37, 41)';
+        document.getElementById('logoName').style.color='rgb(33, 37, 41)';
+        
+        document.getElementById('loginIcon').style.color='rgb(33, 37, 41)';
+        document.getElementById('logoutIcon').style.color='rgb(33, 37, 41)';
+        document.getElementById('specOffr').style.color='rgb(33, 37, 41)';
+        // if( document.getElementById('loginIcon')){
+        //   document.getElementById('loginIcon').style.color='rgb(33, 37, 41)';
+        // }
+        // if( document.getElementById('logoutIcon'))
+        // {
+        //   document.getElementById('logoutIcon').style.color='rgb(33, 37, 41)';
+        // }
+      }
       else if($('#cont').hasClass('active'))
       {
         console.log("cont-->");
@@ -117,28 +161,7 @@
         //   document.getElementById('logoutIcon').style.color='rgb(33, 37, 41)';
         // }
       }
-      else if($('#specOffr').hasClass('active'))
-      {
-        console.log("cont-->");
-        document.getElementById('mainNav').style.background='white';
-        document.getElementById('abt').style.color='rgb(33, 37, 41)';
-        document.getElementById('serv').style.color='rgb(33, 37, 41)';
-        document.getElementById('more').style.color='rgb(33, 37, 41)';
-        //document.getElementById('cont').style.color='rgb(33, 37, 41)';
-        document.getElementById('insur').style.color='rgb(33, 37, 41)';
-        document.getElementById('logoName').style.color='rgb(33, 37, 41)';
-        
-        document.getElementById('loginIcon').style.color='rgb(33, 37, 41)';
-        document.getElementById('logoutIcon').style.color='rgb(33, 37, 41)';
-        //document.getElementById('specOffr').style.color='rgb(33, 37, 41)';
-        // if( document.getElementById('loginIcon')){
-        //   document.getElementById('loginIcon').style.color='rgb(33, 37, 41)';
-        // }
-        // if( document.getElementById('logoutIcon'))
-        // {
-        //   document.getElementById('logoutIcon').style.color='rgb(33, 37, 41)';
-        // }
-      }
+      
       
       // $("#mainNav").addClass("navbar-shrink");
     } else {
