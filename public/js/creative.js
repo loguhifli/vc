@@ -8,7 +8,7 @@
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
         $('html, body').animate({
-          scrollTop: (target.offset().top - 57)
+          scrollTop: (target.offset().top - 27)
         }, 1000, "easeInOutExpo");
         return false;
       }
@@ -23,7 +23,7 @@
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '#mainNav',
-    offset: 57
+    offset: 27
   });
 
   // Collapse Navbar
@@ -31,6 +31,8 @@
     if ($("#mainNav").offset().top > 100) {
       if($('#abt').hasClass('active'))
       {
+        console.log("abt-->");
+       
         document.getElementById('mainNav').style.background='#24d8c1';
         // document.getElementById('abt').style.color='#fff';
         document.getElementById('serv').style.color='#fff';
@@ -53,6 +55,7 @@
       }
       else if($('#serv').hasClass('active'))
       {
+        console.log("serv-->");
         document.getElementById('mainNav').style.background='white';
         document.getElementById('abt').style.color='rgb(33, 37, 41)';
        
@@ -98,7 +101,8 @@
       
       else if($('#specOffr').hasClass('active'))
       {
-        console.log("cont-->");
+        console.log("specOffr-->");
+
         document.getElementById('mainNav').style.background='white';
         document.getElementById('abt').style.color='rgb(33, 37, 41)';
         document.getElementById('serv').style.color='rgb(33, 37, 41)';
@@ -120,7 +124,7 @@
       }
       else if($('#insur').hasClass('active'))
       {
-        console.log("cont-->");
+        console.log("insur-->");
         document.getElementById('mainNav').style.background='white';
         document.getElementById('abt').style.color='rgb(33, 37, 41)';
         document.getElementById('serv').style.color='rgb(33, 37, 41)';
@@ -166,7 +170,7 @@
       
       // $("#mainNav").addClass("navbar-shrink");
     } else {
-      
+      console.log("mainNav-->");
       $("#mainNav").removeClass("navbar-shrink");
       document.getElementById('mainNav').style.background='transparent';
       document.getElementById('abt').style.color='rgba(255,255,255,.7)';
