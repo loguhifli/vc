@@ -95,6 +95,7 @@
         // }
         
       }
+      
       else if($('#specOffr').hasClass('active'))
       {
         console.log("cont-->");
