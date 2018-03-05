@@ -227,7 +227,7 @@
     .modal-content {
         /* ### Start Note:Overwite the bootstrap model background color for every before popup action ### */
         background-color: unset !important; 
-        border:unset; 
+        border:unset !important; 
         /* ### End Note:Overwite the bootstrap model background color for every before popup action ### */
         
     }
