@@ -47,7 +47,7 @@
         </label>
         <br>
         <!-- <input class="emailInput" type="email" placeholder="Enter your email id" name="userId" ng-model="usereMailId" ng-required="true"> -->
-        <input class="template_input" type="text" placeholder="Enter Username" name="userId" ng-model="usereMailId" ng-required="true" style="">
+        <input class="template_input" type="text" name="userId" ng-model="usereMailId" ng-required="true" style="">
         <br>
         <span class="validationNotify" ng-show="(loginForm.userId.$touched || loginForm.$submitted)&& loginForm.userId.$error.required">From email is required
             <br>
@@ -62,7 +62,7 @@
             <span ng-show="loginForm.loginPswd.$error.required" class="mandatorySymbol"></span>
         </label>
         <br>
-        <input class="template_input" type="password" placeholder="Enter your password" name="loginPswd" ng-model="loginPassword" ng-required="true">
+        <input class="template_input" type="password" name="loginPswd" ng-model="loginPassword" ng-required="true">
         <br>
         <span class="validationNotify" ng-show="(loginForm.loginPswd.$touched || loginForm.$submitted) && loginForm.loginPswd.$error.required">Subject is required
             <br>

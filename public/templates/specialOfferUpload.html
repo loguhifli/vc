@@ -9,7 +9,7 @@
             <span ng-show="speOff_uploadForm.speOff_title.$error.required" class="mandatorySymbol"></span>
         </label>
         <br>
-        <input  class="template_input" type="text" placeholder="Enter Your Title" name="speOff_title" ng-model="speOffTitle" ng-required="true">
+        <input  class="template_input" type="text" name="speOff_title" ng-model="speOffTitle" ng-required="true">
         <br>
         <span class="validationNotify" ng-show="(speOff_uploadForm.speOff_title.$touched || speOff_uploadForm.$submitted) && speOff_uploadForm.speOff_title.$error.required">Title is required
             <br>
@@ -19,7 +19,7 @@
             <span ng-show="speOff_uploadForm.speOff_msg.$error.required" class="mandatorySymbol"></span>
         </label>
         <br>
-        <textarea class="template_input emailInput-textarea" auto-resize placeholder="Enter Your Message" name="speOff_msg" ng-model="speOffMsg"
+        <textarea class="template_input emailInput-textarea" auto-resize name="speOff_msg" ng-model="speOffMsg"
             ng-required="true"></textarea>
         <br>
         <span class="validationNotify" ng-show="(speOff_uploadForm.speOff_msg.$touched || speOff_uploadForm.$submitted) && speOff_uploadForm.speOff_msg.$error.required">Message is required
