@@ -10,6 +10,13 @@
 
   <title>Highfli Travels</title>
 
+  <!-- Start of careator Zendesk Widget script -->
+  <script>
+/*<![CDATA[*/window.zEmbed || function (e, t) { var n, o, d, i, s, a = [], r = document.createElement("iframe"); window.zEmbed = function () { a.push(arguments) }, window.zE = window.zE || window.zEmbed, r.src = "javascript:false", r.title = "", r.role = "presentation", (r.frameElement || r).style.cssText = "display: none", d = document.getElementsByTagName("script"), d = d[d.length - 1], d.parentNode.insertBefore(r, d), i = r.contentWindow, s = i.document; try { o = s } catch (e) { n = document.domain, r.src = 'javascript:var d=document.open();d.domain="' + n + '";void(0);', o = s } o.open()._l = function () { var e = this.createElement("script"); n && (this.domain = n), e.id = "js-iframe-async", e.src = "https://assets.zendesk.com/embeddable_framework/main.js", this.t = +new Date, this.zendeskHost = "careator.zendesk.com", this.zEQueue = a, this.body.appendChild(e) }, o.write('<body onload="document._l();">'), o.close() }();
+  /*]]>*/
+  </script>
+  
+  <!-- End of careator Zendesk Widget script -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 
   <!-- ##### Start including controller files #####-->
@@ -54,7 +61,6 @@
   <!-- Custom styles for this template -->
   <link href="css/creative.min.css" rel="stylesheet">
   <style>
- 
   </style>
 
 </head>
@@ -65,7 +71,9 @@
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
       <!-- <a class="navbar-brand js-scroll-trigger" href="#page-top" id="logoName">Highfli Travels</a> -->
-      <a class="navbar-brand js-scroll-trigger" href="#page-top" id="logoName"><img src="/img/hft.png" class="logo"></a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top" id="logoName">
+        <img src="/img/hft.png" class="logo">
+      </a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -85,20 +93,22 @@
             <a class="nav-link js-scroll-trigger" href="#offers" name="specOffr_titleName" id="specOffr">Special Offers</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#insurance" name="insur_titleName" id="insur">Insurance</a>
-            </li>
+            <a class="nav-link js-scroll-trigger" href="#insurance" name="insur_titleName" id="insur">Insurance</a>
+          </li>
           <li class="nav-item dropdown">
-            <a class="nav-link js-scroll-trigger dropbtn" href="#contact" name="cont_titleName" id="cont">Contact<span class="caret"></span></a>
+            <a class="nav-link js-scroll-trigger dropbtn" href="#contact" name="cont_titleName" id="cont">Contact
+              <span class="caret"></span>
+            </a>
             <div class="dropdown-content">
               <a href="#">0280767099</a>
               <a href="#">info@highflitravel.com.au</a>
             </div>
           </li>
-         
-         
+
+
           <li class="nav-item">
-            <a ng-show="adminStatus!=true" class="nav-link js-scroll-trigger cursor_mark" id="loginIcon" ng-click="loginHit()" >Login</a>
-            <a ng-show="adminStatus==true" class="nav-link js-scroll-trigger cursor_mark" id="logoutIcon" ng-click="logoutHit()" >Logout</a>
+            <a ng-show="adminStatus!=true" class="nav-link js-scroll-trigger cursor_mark" id="loginIcon" ng-click="loginHit()">Login</a>
+            <a ng-show="adminStatus==true" class="nav-link js-scroll-trigger cursor_mark" id="logoutIcon" ng-click="logoutHit()">Logout</a>
           </li>
 
         </ul>
@@ -120,7 +130,7 @@
           <hr>
         </div>
         <div class="col-lg-8 mx-auto">
-          <p class="text-faded mb-5 text_align" >Fly High with HighFli</p>
+          <p class="text-faded mb-5 text_align">Fly High with HighFli</p>
           <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
         </div>
       </div>
@@ -175,7 +185,7 @@
             <p class="text-muted mb-0">Get real-time individual custom packages</p>
           </div>
         </div>
-      
+
         <div class="col-lg-4 col-md-6 text-center">
           <div class="service-box mt-5 mx-auto">
             <i class="fa fa-4x fa-clock-o text-primary mb-3 sr-icons"></i>
@@ -219,8 +229,8 @@
             <img ng-if="!fd.file" class="img-fluid" src="img/moreToExplore/sydney.jpg">
             <div class="portfolio-box-caption">
               <div class="portfolio-box-caption-content">
-                <i ng-if="adminStatus==true" class="fa fa-close deleteDetail_btn"  ng-click="deleteFD($index)"></i>
-                <div class="project-category text-faded text_align" >
+                <i ng-if="adminStatus==true" class="fa fa-close deleteDetail_btn" ng-click="deleteFD($index)"></i>
+                <div class="project-category text-faded text_align">
                   {{fd.title}}
                 </div>
                 <div class="project-name">
@@ -231,19 +241,19 @@
             </div>
           </a>
         </div>
-        
+
         <div class="col-lg-4 col-sm-6">
           <br>
-         <button class="btn btn-primary btn-xl js-scroll-trigger" ng-if="adminStatus==true" ng-click="uploadFestDetail()">Upload Details</button>
-         </div>
-       </div>
+          <button class="btn btn-primary btn-xl js-scroll-trigger" ng-if="adminStatus==true" ng-click="uploadFestDetail()">Upload Details</button>
+        </div>
       </div>
+    </div>
     </div>
 
   </section>
 
   <section id="offers" style="">
-    <div class="container .portfolio_container" >
+    <div class="container .portfolio_container">
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading">Special Offers</h2>
@@ -264,7 +274,7 @@
             <div class="portfolio-box-caption">
               <div class="portfolio-box-caption-content">
                 <i ng-if="adminStatus==true" class="fa fa-close deleteDetail_btn" ng-click="deleteSO($index)"></i>
-                <div class="project-category text-faded text_align" >
+                <div class="project-category text-faded text_align">
                   {{sp.title}}
                 </div>
                 <div class="project-name">
@@ -276,7 +286,7 @@
           </a>
         </div>
         <div class="col-lg-4 col-sm-6">
-           <br>
+          <br>
           <button class="btn btn-primary btn-xl js-scroll-trigger" ng-if="adminStatus==true" ng-click="uploadSpeOff()">Upload Details</button>
         </div>
       </div>
@@ -287,8 +297,8 @@
 
   <section id="insurance" style="">
 
-      <div class="container">
-        <!-- <div class="row">
+    <div class="container">
+      <!-- <div class="row">
           <div class="col-lg-8 mx-auto text-center">
             <h2 class="section-heading">Coming soon</h2>
             <hr class="my-4">
@@ -296,15 +306,15 @@
             </p>
           </div>
         </div> -->
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading">Coming Soon!!!</h2>
-       
-          </div>
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="section-heading">Coming Soon!!!</h2>
+
         </div>
-  
       </div>
-    </section>
+
+    </div>
+  </section>
   <section id="contact" style="">
 
     <div class="container">
