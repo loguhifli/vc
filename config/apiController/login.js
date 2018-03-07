@@ -9,7 +9,7 @@ module.exports.login = function (req, res) {
     var id = req.body.emailId;
     var pswd = req.body.loginPswd;
 
-    if(id=="abc@gmail.com" && pswd == "abc")
+    if(id=="admin@highflitravel.com.au" && pswd == "Admin#123")
     {
         responseData = {
             "status": true,
