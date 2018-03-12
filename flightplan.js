@@ -17,7 +17,7 @@ var tmpDir = appName+'-' + new Date().getTime();
 
 plan.target('production', [
   {
-    host: '159.89.161.196',
+    host: 'highflitravel.com.au',
     username: username,
     agent: process.env.SSH_AUTH_SOCK
   },
