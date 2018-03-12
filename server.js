@@ -60,11 +60,11 @@ app.get('/index.html', function (req, res) {
     console.log("index.html: " + __dirname + "/public/" + "index.html");
 });
 
-var server = app.listen('3000', function () {
+var server = app.listen('5000', function () {
     // var host = server.address().address;
     // var port = server.address().port;
 
-    console.log("server listening at http");
+    console.log("server listening at http 5000");
 })
 
 require('./config/apiFile')(app);
