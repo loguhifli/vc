@@ -4,11 +4,11 @@
 </div> -->
 <form name="emailContactForm" class="animate" novalidate>
   <div class="container" style="background-image: url(img/{{backgroundImg}});">
-    <label class="emailModel-lab">From
+    <!-- <label class="emailModel-lab">From
       <span ng-show="emailContactForm.fromEm.$error.required" class="mandatorySymbol"></span>
     </label>
-    <br>
-    <input class="template_input" type="email" name="fromEm" ng-model="fromEmailId" ng-required="true">
+    <br> -->
+    <input class="template_input" placeholder="From" type="email" name="fromEm" ng-model="fromEmailId" ng-required="true">
     <br>
     <span class="validationNotify" ng-show="(emailContactForm.fromEm.$touched || emailContactForm.$submitted) && emailContactForm.fromEm.$error.required">From email is required
       <br>
@@ -19,21 +19,21 @@
       <br>
     </span>
 
-    <label class="emailModel-lab">Subject
+    <!-- <label class="emailModel-lab">Subject
       <span ng-show="emailContactForm.fromEm.$error.required" class="mandatorySymbol"></span>
     </label>
-    <br>
-    <input class="template_input" type="text" name="emailS" ng-model="emailSub" ng-required="true">
+    <br> -->
+    <input class="template_input" placeholder="Subject" type="text" name="emailS" ng-model="emailSub" ng-required="true">
     <br>
     <span class="validationNotify" ng-show="emailContactForm.emailS.$touched && emailContactForm.emailS.$error.required">Subject is required
       <br>
     </span>
 
-    <label class="emailModel-lab">Message
+    <!-- <label class="emailModel-lab">Message
       <span ng-show="emailContactForm.fromEm.$error.required" class="mandatorySymbol"></span>
     </label>
-    <br>
-    <textarea class="template_input emailInput-textarea" auto-resize name="emailDes" ng-model="emailMes"
+    <br> -->
+    <textarea class="template_input emailInput-textarea"  placeholder="Message" auto-resize name="emailDes" ng-model="emailMes"
       ng-required="true"></textarea>
     <br>
     <span class="validationNotify" ng-show="emailContactForm.emailDes.$touched && emailContactForm.emailDes.$error.required">Message is required

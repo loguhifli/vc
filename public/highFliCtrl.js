@@ -26,7 +26,7 @@ app.controller('highFliCtrl', ['$scope', '$uibModal', '$rootScope', 'httpFactory
     $scope.getSpecialOfferData = function () {
         console.log("getSpecialOfferData-->");
         // console.log("specOffSubJson: " + JSON.stringify(specOffSubJson));
-        var api = "http://159.89.161.196:3000/travel/getSpecialOfferData";
+        var api = "https://highflitravel.com.au/travel/getSpecialOfferData";
 
         console.log("api: " + api);
 
@@ -56,7 +56,7 @@ app.controller('highFliCtrl', ['$scope', '$uibModal', '$rootScope', 'httpFactory
     $scope.getFestivalDetailData = function () {
         console.log("getSpecialOfferData-->");
         // console.log("specOffSubJson: " + JSON.stringify(specOffSubJson));
-        var api = "http://159.89.161.196:3000/travel/getFestivalDetailData";
+        var api = "https://highflitravel.com.au/travel/getFestivalDetailData";
 
         console.log("api: " + api);
 
@@ -126,7 +126,7 @@ app.controller('highFliCtrl', ['$scope', '$uibModal', '$rootScope', 'httpFactory
                 "loginPswd": pswd
             }
             console.log("loginJson: " + JSON.stringify(loginJson));
-            var api = "http://159.89.161.196:3000/travel/login";
+            var api = "https://highflitravel.com.au/travel/login";
 
             console.log("api: " + api);
 
@@ -230,7 +230,7 @@ app.controller('highFliCtrl', ['$scope', '$uibModal', '$rootScope', 'httpFactory
             console.log("emailJson: " + JSON.stringify(emailJson));
 
             // var api = $scope.propertyJson.emailSend;
-            var api = "http://159.89.161.196:3000/travel/emailSend";
+            var api = "https://highflitravel.com.au/travel/emailSend";
 
             console.log("api: " + api);
 
@@ -326,7 +326,7 @@ app.controller('highFliCtrl', ['$scope', '$uibModal', '$rootScope', 'httpFactory
 
             if (file != undefined) {
 
-                var uploadURL = "http://159.89.161.196:3000/travel/uploadFestDetailPic";
+                var uploadURL = "https://highflitravel.com.au/travel/uploadFestDetailPic";
                 console.log("$scope.file from : alumRegCtr.js: " + $scope.file);
 
 
@@ -378,7 +378,7 @@ app.controller('highFliCtrl', ['$scope', '$uibModal', '$rootScope', 'httpFactory
         uplFestDetailModalinstance.close('resetModel');
 
         console.log("specOffSubJson: " + JSON.stringify(specOffSubJson));
-        var api = "http://159.89.161.196:3000/travel/festivalDetailDataUpload";
+        var api = "https://highflitravel.com.au/travel/festivalDetailDataUpload";
 
         console.log("api: " + api);
 
@@ -441,7 +441,7 @@ app.controller('highFliCtrl', ['$scope', '$uibModal', '$rootScope', 'httpFactory
 
             if (file != undefined) {
 
-                var uploadURL = "http://159.89.161.196:3000/travel/uploadSpeOffPic";
+                var uploadURL = "https://highflitravel.com.au/travel/uploadSpeOffPic";
                 console.log("$scope.file from : alumRegCtr.js: " + $scope.file);
 
 
@@ -508,7 +508,7 @@ app.controller('highFliCtrl', ['$scope', '$uibModal', '$rootScope', 'httpFactory
         uplSpeOffModalinstance.close('resetModel');
 
         console.log("specOffSubJson: " + JSON.stringify(specOffSubJson));
-        var api = "http://159.89.161.196:3000/travel/specialOfferDataUpload";
+        var api = "https://highflitravel.com.au/travel/specialOfferDataUpload";
 
         console.log("api: " + api);
 
@@ -565,7 +565,7 @@ app.controller('highFliCtrl', ['$scope', '$uibModal', '$rootScope', 'httpFactory
         var index = {
             "index": index
         }
-        var api = "http://159.89.161.196:3000/travel/deleteSO";
+        var api = "https://highflitravel.com.au/travel/deleteSO";
         httpFactory.post(api, index).then(function (data) {
             var checkStatus = httpFactory.dataValidation(data);
             console.log("data--" + JSON.stringify(data.data));
@@ -616,7 +616,7 @@ app.controller('highFliCtrl', ['$scope', '$uibModal', '$rootScope', 'httpFactory
         var index = {
             "index": index
         }
-        var api = "http://159.89.161.196:3000/travel/deleteFD";
+        var api = "https://highflitravel.com.au/travel/deleteFD";
         httpFactory.post(api, index).then(function (data) {
             var checkStatus = httpFactory.dataValidation(data);
             console.log("data--" + JSON.stringify(data.data));

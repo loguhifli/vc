@@ -42,12 +42,12 @@
 <form class="animate" name="loginForm" novalidate style="background-color:red !important;">
     <button type="button" class="close" ng-click="$close()">&times;</button>
     <div class="container" style="background-image: url(img/greenSky.png);">
-        <label class="emailModel-lab">UserId
+        <!-- <label class="emailModel-lab">UserId
             <span ng-show="loginForm.userId.$error.required" class="mandatorySymbol"></span>
         </label>
-        <br>
+        <br> -->
         <!-- <input class="emailInput" type="email" placeholder="Enter your email id" name="userId" ng-model="usereMailId" ng-required="true"> -->
-        <input class="template_input" type="text" name="userId" ng-model="usereMailId" ng-required="true" style="">
+        <input class="template_input" placeholder="Enter your email id" type="text" name="userId" ng-model="usereMailId" ng-required="true" style="">
         <br>
         <span class="validationNotify" ng-show="(loginForm.userId.$touched || loginForm.$submitted)&& loginForm.userId.$error.required">From email is required
             <br>
@@ -58,11 +58,11 @@
         </span>
 
 
-        <label class="emailModel-lab">Password
+        <!-- <label class="emailModel-lab">Password
             <span ng-show="loginForm.loginPswd.$error.required" class="mandatorySymbol"></span>
         </label>
-        <br>
-        <input class="template_input" type="password" name="loginPswd" ng-model="loginPassword" ng-required="true">
+        <br> -->
+        <input class="template_input" placeholder="Enter your password" type="password" name="loginPswd" ng-model="loginPassword" ng-required="true">
         <br>
         <span class="validationNotify" ng-show="(loginForm.loginPswd.$touched || loginForm.$submitted) && loginForm.loginPswd.$error.required">Subject is required
             <br>
