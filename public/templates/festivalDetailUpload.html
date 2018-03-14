@@ -5,30 +5,30 @@
 <form name="festDetail_uploadForm" class="animate" novalidate>
     <div class="container" style="background-image: url(img/{{backgroundImg}});">
 
-        <label class="emailModel-lab">Title
+        <!-- <label class="emailModel-lab">Title
             <span ng-show="festDetail_uploadForm.festDetail_title.$error.required" class="mandatorySymbol"></span>
         </label>
-        <br>
-        <input class="template_input" type="text" name="festDetail_title" ng-model="festDetailTitle" ng-required="true">
+        <br> -->
+        <input class="template_input" placeholder="Title" type="text" name="festDetail_title" ng-model="festDetailTitle" ng-required="true">
         <br>
         <span class="validationNotify" ng-show="(festDetail_uploadForm.festDetail_title.$touched || festDetail_uploadForm.$submitted) && festDetail_uploadForm.festDetail_title.$error.required">Title is required
             <br>
         </span>
 
-        <label class="emailModel-lab">Message
+        <!-- <label class="emailModel-lab">Message
             <span ng-show="festDetail_uploadForm.festDetail_msg.$error.required" class="mandatorySymbol"></span>
         </label>
-        <br>
-        <textarea class="template_input emailInput-textarea" auto-resize name="festDetail_msg" ng-model="festDetailMsg"
-            ng-required="true"></textarea>
+        <br> -->
+        <textarea class="template_input emailInput-textarea"  placeholder="Message"  auto-resize name="festDetail_msg" ng-model="festDetailMsg"
+            ng-required="true" style="padding: 12px 20px;"></textarea>
         <br>
         <span class="validationNotify" ng-show="(festDetail_uploadForm.festDetail_msg.$touched || festDetail_uploadForm.$submitted) && festDetail_uploadForm.festDetail_msg.$error.required">Message is required
             <br>
         </span>
-        <label class="emailModel-lab">File
+        <!-- <label class="emailModel-lab">File
             <span ng-show="festDetail_uploadForm.myImage.$error.required" class="mandatorySymbol"></span>
         </label>
-        <br>
+        <br> -->
         <input type="file" style="display: inline-block;width:60%;float:left" class="btnCont btnCont-uploadColor" name="myImage"
             value="Upload" image-with-preview file-model="file.upload" ng-model="image" dimensions="height==350;width==650" accept="image/jpeg,image/png"
             ng-required="true">
